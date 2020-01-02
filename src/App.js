@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { useRef } from 'react';
 import { Canvas, useFrame } from 'react-three-fiber';
-import { css, jsx } from '@emotion/core';
+import { css, jsx, Global } from '@emotion/core';
 import emotionReset from 'emotion-reset';
 
 const globalStyles = css`
@@ -17,7 +17,7 @@ const globalStyles = css`
 const theme = css`
     width: 100vw;
     height: 100vh;
-    background-color: #d8bfd8;
+    background-color: #f0f8ff;
 `;
 
 const Thing = () => {
@@ -47,10 +47,13 @@ const Thing = () => {
 
 const App = () => {
     return (
-        <div css={theme}>
-            <Canvas>
-                <Thing />
-            </Canvas>
+        <div>
+            <Global styles={globalStyles} />
+            <div css={theme}>
+                <Canvas>
+                    <Thing />
+                </Canvas>
+            </div>
         </div>
     );
 };

@@ -16,7 +16,6 @@ RUN echo -n 'node '; node -v; \
 COPY src ${APP_HOME}/src/
 COPY public ${APP_HOME}/public/
 RUN npm run build
-CMD ["sh"]
 
 # deploy stage
 FROM nginx:${NGINX_TAG}
