@@ -12,7 +12,8 @@
     "react-three-fiber": "3.0.0-beta.13",
     "three": "^0.112.1",
     "@emotion/core": "^10.0.27",
-    "emotion-reset": "^2.0.4"
+    "emotion-reset": "^2.0.4",
+    "cannon": "^0.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
