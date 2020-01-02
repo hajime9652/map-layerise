@@ -3,6 +3,10 @@
 ## develop server run
 `docker-compose run --rm --service-ports node npm start`
 
+## prerequired
+[react-three-fiber](https://github.com/react-spring/react-three-fiber)
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
