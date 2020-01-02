@@ -1,0 +1,15 @@
+version: "3"
+services:
+  node:
+    container_name: maplayerise
+    image: maplayerise:latest
+    build:
+        context: .
+        args:
+          - NODE_TAG=12.8
+          - NGINX_TAG=alpine
+    environment:
+        - NODE_ENV=production
+    ports:
+        - 8080:80
+    restart: always
