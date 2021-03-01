@@ -10,7 +10,7 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
     "react-three-fiber": "3.0.0-beta.13",
-    "three": "^0.112.1",
+    "three": "^0.125.0",
     "@emotion/core": "^10.0.27",
     "emotion-reset": "^2.0.4",
     "cannon": "^0.6.2"
